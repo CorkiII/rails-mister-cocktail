@@ -11,11 +11,12 @@
 
 <h2>Recipe</h2>
 
-<ul class="list-group">
-  <% @cocktail.doses.each do |dose| %>
-  <li class="list-group-item">
-    <%= dose.ingredient.name %>
-  </li>
-    <% end %>
-</ul>
-
+        <ul class="list-group">
+          <% @cocktail.doses.each do |dose| %>
+            <li><%=  dose.ingredient.name %> <%= link_to dose_path(dose.id),
+              method: :delete,
+              data: { confirm: 'Are you sure ?'} do %>
+                  <i class="fas fa-minus"></i>
+                <% end %>
+            <% end %>
+        </ul>
