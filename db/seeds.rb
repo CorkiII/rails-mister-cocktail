@@ -11,3 +11,5 @@ Ingredient.create(name: "mint leaves")
 Ingredient.create(name: "Vodka")
 Ingredient.create(name: "Gin")
 Ingredient.create(name: "Tonic")
+Ingredient.create(name: "Campari")
+
